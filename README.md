@@ -30,7 +30,7 @@ Now comes the fun part! We're going to use **Certbot** to get us a wildcard cert
 
 Go to My Profile > API Tokens > Create Token. Give it whatever name you desire, and set parameters like so:
 - Permissions:
-  - Zone: Zone: Read
+  	- Zone: Zone: Read
 	- Zone: DNS: Edit
 - Zone Resources:
 	- Include: Specific zone: `domain.com` (where `domain.com` is your domain)
@@ -111,8 +111,6 @@ Let's Encrypt certificates expire every 90 days, but you can automate renewals w
 1. In Synology DiskStation Manager, go to **Control Panel** > **Task Scheduler**.
 
 1. Using **Create** > **Scheduled Task** > **User Defined Script**, add two repeating tasks which run as `root` one hour apart.
-
-    <img src="assets/renew-certs.png" alt="Create Task" style="width:40%;">
 
     For each task, in the **Task Settings** tab under **Run Command**, enter the following.
 
