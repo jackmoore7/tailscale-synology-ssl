@@ -49,7 +49,7 @@ This section will assume your volume is called `volume1` and that you have a fol
 3. Create the Certbot configuration file: `sudo touch /volume1/docker/certbot/lib_letsencrypt/cloudflare.ini`
 4. Add your Cloudflare API token:
 ```
-dns_cloudflare_api_token = your-cloudflare-api-token" | \
+echo "dns_cloudflare_api_token = your-cloudflare-api-token" | \
 sudo tee /volume1/docker/certbot/lib_letsencrypt/cloudflare.ini > /dev/null
 ```
 5. Use the folling command to launch a temporary Docker container which runs Certbot and adds the necessary DNS records to your domain. Make sure you replace the domains and email with your own.
