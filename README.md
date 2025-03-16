@@ -69,6 +69,7 @@ sudo docker run --rm \
 6. If successful, you'll find your new certificates at `.../docker/certbot/etc_letsencrypt/live`. You'll need to download the following files:
  - Private Key - `privkey.pem`
  - Certificate - `cert.pem`
+ >A couple of people have reported that their certificates were generated in `.../docker/certbot/etc_letsencrypt/archive` instead of `/live`. 
 
 7. Import the certificate to your NAS. It'll be in Control Panel > Security > Certificate. Select Add > Add a new certificate > Import certificate > Upload the `Private Key` and `Certificate`. Don't worry about the Intermediate certificate. 
 
